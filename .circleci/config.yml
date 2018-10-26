@@ -5,16 +5,16 @@
 version: 2
 jobs:
   build:
-    #docker:
-    machine:
+    docker:
+    #machine:
       # specify the version you desire here
       #- image: circleci/node:7.10
-      #- image: labng:latest
+      - image: labng:latest
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
-
+    entrypoint: .
     working_directory: ~/repo
 
     steps:
