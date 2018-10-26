@@ -13,6 +13,5 @@ jobs:
 
     steps:
       - run:
-	 name: Running test
-	 command: nom test
-
+          name: Running tests
+          command: npm test
